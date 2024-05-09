@@ -45,7 +45,7 @@ spec:
       labels:
         app: go-micro-dashboard
     spec:
-      # serviceAccountName: go-micro
+      serviceAccountName: go-micro
       containers:
         - image: xpunch/go-micro-dashboard:latest
           imagePullPolicy: IfNotPresent
