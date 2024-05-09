@@ -13,7 +13,7 @@ spec:
     spec:
       # serviceAccountName: go-micro
       imagePullSecrets:
-      - name: harbor-cred
+      - name: gcr-json-key
       terminationGracePeriodSeconds: 5
       containers:
         - name: server
