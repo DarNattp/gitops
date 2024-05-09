@@ -11,7 +11,7 @@ spec:
       labels:
         app: currencyservice
     spec:
-      serviceAccountName: go-micro 
+      # serviceAccountName: go-micro 
       imagePullSecrets:
       - name: harbor-cred
       terminationGracePeriodSeconds: 5
