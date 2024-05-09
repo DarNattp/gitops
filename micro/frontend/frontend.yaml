@@ -18,7 +18,7 @@ spec:
       - name: gcr-json-key      
       containers:
         - name: server
-          image: frontend
+          image: asia-southeast1-docker.pkg.dev/devops-00000/micro/frontend:latest
           ports:
             - containerPort: 8080
           readinessProbe:
