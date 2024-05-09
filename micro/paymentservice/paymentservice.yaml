@@ -31,7 +31,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
         - name: server
-          image: harbor.creativebox.dev/devsecops/paymentservice:3
+          image: asia-southeast1-docker.pkg.dev/devops-00000/micro/paymentservice:latest
           ports:
             - containerPort: 50051
           env:

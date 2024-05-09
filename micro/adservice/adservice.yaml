@@ -17,7 +17,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
         - name: server
-          image: harbor.creativebox.dev/devsecops/adservice:3
+          image: asia-southeast1-docker.pkg.dev/devops-00000/micro/adservice:latest
           ports:
             - containerPort: 9555
           env:
