@@ -13,7 +13,7 @@ spec:
     spec:
       # serviceAccountName: go-micro
       imagePullSecrets:
-      - name: harbor-cred
+      - name: gcr-json-key
       containers:
         - name: server
           image: asia-southeast1-docker.pkg.dev/devops-00000/micro/checkoutservice:latest
