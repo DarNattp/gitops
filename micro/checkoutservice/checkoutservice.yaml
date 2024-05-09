@@ -46,13 +46,13 @@ spec:
               value: "true"
             - name: TRACING_JAEGER_URL
               value: "http://jaeger-collector.default.svc.cluster.local:14268/api/traces"
-          # resources:
-          #   requests:
-          #     cpu: 100m
-          #     memory: 64Mi
-          #   limits:
-          #     cpu: 200m
-          #     memory: 128Mi
+          resources:
+            requests:
+              cpu: 100m
+              memory: 128Mi
+            limits:
+              cpu: 200m
+              memory: 512Mi
 ---
 apiVersion: v1
 kind: Service
