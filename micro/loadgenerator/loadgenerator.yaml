@@ -27,7 +27,7 @@ spec:
       annotations:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
     spec:
-      # serviceAccountName: go-micro 
+      serviceAccountName: go-micro 
       imagePullSecrets:
       - name: gcr-json-key
       terminationGracePeriodSeconds: 5
