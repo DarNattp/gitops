@@ -13,12 +13,12 @@ spec:
       annotations:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
     spec:
-      # serviceAccountName: go-micro 
+      serviceAccountName: go-micro 
       imagePullSecrets:
-      - name: gcr-json-key
+      - name: gcr-json-key      
       containers:
         - name: server
-          image: asia-southeast1-docker.pkg.dev/devops-00000/micro/frontend:latest
+          image: frontend
           ports:
             - containerPort: 8080
           readinessProbe:
