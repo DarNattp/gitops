@@ -29,7 +29,7 @@ spec:
                 - all
             privileged: false
             readOnlyRootFilesystem: true
-          image: harbor.creativebox.dev/micro/cartservice:latest
+          image: harbor.creativebox.dev/micro/cartservice:1
           ports:
             - containerPort: 7070
           env:
