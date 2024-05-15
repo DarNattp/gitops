@@ -31,7 +31,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
         - name: server
-          image: harbor.creativebox.dev/micro/recommendationservice:latest
+          image: harbor.creativebox.dev/micro/recommendationservice:1
           ports:
             - containerPort: 8080
           readinessProbe:
