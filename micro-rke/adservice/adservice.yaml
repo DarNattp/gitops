@@ -17,7 +17,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
         - name: server
-          image: harbor.creativebox.dev/micro/adservice:1
+          image: harbor.creativebox.dev/micro/adservice:3
           ports:
             - containerPort: 9555
           env:
