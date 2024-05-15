@@ -17,7 +17,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
         - name: server
-          image: harbor.creativebox.dev/micro/currencyservice:1
+          image: harbor.creativebox.dev/micro/currencyservice:3
           ports:
             - name: grpc
               containerPort: 7000
