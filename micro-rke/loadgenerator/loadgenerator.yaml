@@ -50,7 +50,7 @@ spec:
               value: "frontend:80"
       containers:
         - name: main
-          image: harbor.creativebox.dev/micro/loadgenerator:latest
+          image: harbor.creativebox.dev/micro/loadgenerator:2
           env:
             - name: FRONTEND_ADDR
               value: "frontend:80"
