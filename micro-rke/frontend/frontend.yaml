@@ -18,7 +18,7 @@ spec:
       - name: harbor-cred      
       containers:
         - name: server
-          image: harbor.creativebox.dev/micro/frontend:4
+          image: harbor.creativebox.dev/micro/frontend:5
           ports:
             - containerPort: 8080
           readinessProbe:
