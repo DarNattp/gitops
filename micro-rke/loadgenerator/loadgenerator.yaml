@@ -29,7 +29,7 @@ spec:
     spec:
       serviceAccountName: go-micro 
       imagePullSecrets:
-      - name: gcr-json-key
+      - name: harbor-cred
       terminationGracePeriodSeconds: 5
       restartPolicy: Always
       initContainers:
@@ -50,7 +50,7 @@ spec:
               value: "frontend:80"
       containers:
         - name: main
-          image: asia-southeast1-docker.pkg.dev/devops-00000/micro/loadgenerator:latest
+          image: harbor.creativebox.dev/micro/loadgenerator:latest
           env:
             - name: FRONTEND_ADDR
               value: "frontend:80"

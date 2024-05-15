@@ -15,10 +15,10 @@ spec:
     spec:
       serviceAccountName: go-micro 
       imagePullSecrets:
-      - name: gcr-json-key      
+      - name: harbor-cred      
       containers:
         - name: server
-          image: asia-southeast1-docker.pkg.dev/devops-00000/micro/frontend:latest
+          image: harbor.creativebox.dev/micro/frontend:latest
           ports:
             - containerPort: 8080
           readinessProbe:

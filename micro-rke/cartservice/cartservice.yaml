@@ -13,7 +13,7 @@ spec:
     spec:
       serviceAccountName: go-micro 
       imagePullSecrets:
-      - name: gcr-json-key
+      - name: harbor-cred
       terminationGracePeriodSeconds: 5
       securityContext:
         fsGroup: 1000
@@ -29,7 +29,7 @@ spec:
                 - all
             privileged: false
             readOnlyRootFilesystem: true
-          image: asia-southeast1-docker.pkg.dev/devops-00000/micro/cartservice:latest
+          image: harbor.creativebox.dev/micro/cartservice:latest
           ports:
             - containerPort: 7070
           env:

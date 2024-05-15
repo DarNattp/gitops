@@ -27,11 +27,11 @@ spec:
     spec:
       serviceAccountName: go-micro
       imagePullSecrets:
-      - name: gcr-json-key
+      - name: harbor-cred
       terminationGracePeriodSeconds: 5
       containers:
         - name: server
-          image: asia-southeast1-docker.pkg.dev/devops-00000/micro/recommendationservice:latest
+          image: harbor.creativebox.dev/micro/recommendationservice:latest
           ports:
             - containerPort: 8080
           readinessProbe:
