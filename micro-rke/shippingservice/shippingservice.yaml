@@ -16,7 +16,7 @@ spec:
       - name: harbor-cred
       containers:
         - name: server
-          image: harbor.creativebox.dev/micro/shippingservice:11
+          image: harbor.creativebox.dev/micro/shippingservice:13
           ports:
             - containerPort: 50051
           env:
